@@ -13,8 +13,7 @@ namespace ExemploBotCSharp
     class Program
     {
         private static TelegramBotClient botCliente = new TelegramBotClient("2097654419:AAEY95yL3T8RoQ-utxEDPAp0N0ERWHI3iEs");
-        private static double peso = 0;
-        private static double altura = 0;
+     
 
         static void Main(string[] args)
         {
@@ -28,40 +27,6 @@ namespace ExemploBotCSharp
 
         private static void BotCliente_OnMessage(object sender, Telegram.Bot.Args.MessageEventArgs e)
         {
-            if(condição do menu 1)
-            {
-                menu 2 acessa por aqui.
-            }
-           else if(menu 1)
-            {
-                volta menu 1
-            }
-            if(condicao do menu 2)
-            { 
-                menu 3 acessa por aqui
-            }
-            else if (menu 2)
-            {
-                volta menu 2
-            }
-            if(condicao do menu 3)
-            {
-                menu 4 acessa por aqui
-            }
-            else if(menu 3)
-            {
-
-            }
-            if (condicao do menu 4)
-            {
-                retorno para o menu 1
-            }
-            else if (menu 4)
-            {
-
-            }
-
-
             if (e.Message.Text == "1" || e.Message.Text == "2" || e.Message.Text == "3" || e.Message.Text == "4" || e.Message.Text == "5" || e.Message.Text == "6")
             {
                 switch (e.Message.Text)
